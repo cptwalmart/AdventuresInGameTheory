@@ -46,7 +46,7 @@ void step(game *g, int player_index) {
         if(g->players[player_index].direction == DIRECTION_DOWN) {
             g->players[player_index].direction = DIRECTION_UP;
         } else {
-            player_loses(player_index);
+            player_loses(g, player_index);
         }
     }
 
